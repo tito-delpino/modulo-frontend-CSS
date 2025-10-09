@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Academia Conquer Crypto | Fórmate en FullStack y Blockchain Developer</title>
+    <meta name="description" content="Descubre y aprende todo lo relacionado con el Desarrollo FullStack" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <!-- link a un archivo css externo, el media indica en este caso que solo se hara efectivo el css en pantalla, no en impresion -->
+    <link rel="stylesheet" href="css/unidades-medida-relativas.css" media="screen" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pruebas con unidades de medida relativas</h1>
+    </header>
+
+    <main>
+      <p>Este parrafo es un p que le vamos a indicar que tenga un ancho del 50% del ancho total la ventana</p>
+      <article>
+        este article le vamos a indicar que el tamaño de la fuente sea 2rem (root element), seria 2 por el tamaño predeterminado de la fuente de html, 2rem = 2 × 16px = 32px
+        <section>
+          Este sin embargo seria 2em (element), que al estar dentro del article que ya le indicamos el valor 2rem, el resultado seria en relacion a ese valor padre, no al del explorador, 2em = 2 × 32px = 64px
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>© Conquer Crypto 2023 - <a href="aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+  </body>
+</html>
