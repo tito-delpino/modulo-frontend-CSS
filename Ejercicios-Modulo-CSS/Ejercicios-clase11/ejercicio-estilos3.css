@@ -1,4 +1,8 @@
+body {  background-color: grey;
+}
+
 h1 {
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -7,5 +11,5 @@ h2 {
 }
 
 li strong {
-  text-decoration-line: underline;
+  text-decoration: underline;
 }

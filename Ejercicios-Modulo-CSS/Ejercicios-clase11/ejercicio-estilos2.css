@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Verdana;
+  font-family: Arial, Verdana, sans-serif;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h2 {
   font-size: 24px;
   font-style: italic;
   font-variant: small-caps;
+  font-style: italic;
 }
 
 li {font-weight: bold;}
