@@ -1,27 +1,51 @@
 /* Ejercicio 1 clase 10*/
+html {
+  font-size: 18px;
+}
 
-body {color: black;
-font-family: Arial;
-font-size: 0.9em;
-line-height: 1.4em;}
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
 
-.articulo h2 {color: #CC6600;
-font-size: 1.6em; line-height: 1.2em;}
+.articulo h2 {
+  color: #cc6600;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
 
-#menu {background-color: rgb(3, 66, 160);}
+#menu {
+  background-color: rgb(3, 66, 160);
+}
 
-#menu a {color: white;
-font-size: 1.3em;}
+#menu a {
+  color: white;
+  font-size: 1.3em;
+}
 
-#lateral {font-size: 0.9em;}
+#lateral {
+  font-size: 0.9em;
+}
 
-div#noticias p span.fecha {color: #999;}
+#noticias span.fecha {
+  color: #999;
+}
 
-#noticias h3 a {color: #003366;}
+#noticias h3 a {
+  color: #003366;
+}
 
-#publicidad p {color: #555;}
-#publicidad a {color: #CC6600;}
+#publicidad p {
+  color: #555;
+}
+#publicidad a {
+  color: #cc6600;
+}
 
-.articulo a {color: #CC6600;}
+.articulo a {
+  color: #cc6600;
+}
 
 /*----------------------------------------------------------------------------------------------------*/
