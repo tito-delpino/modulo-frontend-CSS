@@ -1,0 +1,55 @@
+p.verdana {
+  font-family: Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "GFS Didot";
+  src: url("fonts/Didot/GFSDidot-Regular.woff2") format("woff2"), url("fonts/Didot/GFSDidot-Regular.woff") format("woff"),
+    url("fonts/Didot/GFSDidot-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+p.didot {
+  font-family: "GFS Didot", serif;
+}
+
+@font-face {
+  font-family: "FreeMono", monospace;
+  src: url("fonts/freemono/FreeMono.woff2") format("woff2"), url("fonts/freemono/FreeMono.woff") format("woff"),
+    url("fonts/freemono/FreeMono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+p.freemono {
+  font-family: "FreeMono", monospace;
+}
+
+p.roboto {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akronim";
+  src: url("fonts/akronim/Akronim-Regular.woff2") format("woff2"), url("fonts/akronim/Akronim-Regular.woff") format("woff"),
+    url("fonts/akronim/Akronim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+p.akronim {
+  font-family: Akronim;
+  font-size: 24px;
+}
+
+p.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
