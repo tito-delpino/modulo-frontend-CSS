@@ -2,7 +2,7 @@
 p a:first-of-type {propiedad:valor;}
 
 `2- #### Selecciona los checkbox que esten marcados, hijos de un form`
-form input[type='checkbox']:checked {propiedad:valor;}
+form input[type="checkbox"]:checked {propiedad:valor;}
 
 `3- #### Selecciona el ultimo p que sea descendiente de article`
 article p:last-of-type {propiedad:valor;}
