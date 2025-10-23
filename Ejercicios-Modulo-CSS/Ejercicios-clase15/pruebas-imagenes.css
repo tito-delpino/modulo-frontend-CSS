@@ -1,0 +1,47 @@
+nav.prueba1 {
+  width: 80%; /* Ancho del elemento (px, %, vw, etc.) */
+  height: 400px; /* Alto del elemento (px, %, vh, auto) */
+  padding: 20px; /* Espacio interno entre contenido y borde (px, %, etc.) */
+  border: 20px solid red; /* Borde: grosor, estilo y color (solid, dashed, dotted, double, etc.) */
+  background-color: green; /* Color de fondo (nombre, rgb(), rgba(), hsl(), etc.) */
+  background-image: url(images/2025_04_05_12_23_IMG_1319.JPG);
+  /* Imagen de fondo (url(), none) */
+  background-repeat: no-repeat; /* Repetición del fondo (repeat, repeat-x, repeat-y, no-repeat, space, round) */
+  background-position: center center; /* Posición de la imagen (left, right, top, bottom, center o valores en px/% ) */
+  background-size: contain; /* Tamaño de la imagen (auto, cover, contain, px, % ) */
+  background-attachment: scroll; /* Relación con el scroll (scroll, fixed, local) */
+  background-clip: content-box; /* Dónde se recorta el fondo (border-box, padding-box, content-box, text) */
+  background-blend-mode: color-dodge; /* Mezcla del color y la imagen (normal, multiply, screen, overlay, darken, lighten, color-dodge, etc.) */
+}
+
+nav.prueba2 {
+  width: 60%; /* Un poco más estrecha */
+  height: 300px; /* Más baja */
+  padding: 40px; /* Más espacio interior */
+  border: 10px dashed blue; /* Borde más fino y punteado */
+  background-color: orange; /* Color de fondo más cálido */
+  background-image: url(images/2025_04_05_12_23_IMG_1319.JPG);
+  /* Otra imagen (puede ser cualquiera que tengas) */
+  background-repeat: repeat-x; /* Se repite solo horizontalmente */
+  background-position: top right; /* Imagen alineada arriba a la derecha */
+  background-size: cover; /* La imagen cubre todo el fondo recortando lo que sobra */
+  background-attachment: fixed; /* La imagen se fija al viewport (no se mueve al hacer scroll) */
+  background-clip: border-box; /* El fondo llega hasta debajo del borde */
+  background-blend-mode: multiply; /* Mezcla el color y la imagen para oscurecer el resultado */
+}
+
+nav.prueba3 {
+  width: 90%; /* Casi todo el ancho de la página */
+  height: 350px; /* Altura media */
+  padding: 10px; /* Menor espacio interno */
+  border: 15px double purple; /* Borde doble de color violeta */
+  background-color: lightblue; /* Color base claro */
+  background-image: url(images/2025_04_05_12_23_IMG_1319.JPG);
+  /* Otra imagen cualquiera */
+  background-repeat: space; /* Repite la imagen dejando espacio entre copias */
+  background-position: bottom left; /* Imagen anclada abajo a la izquierda */
+  background-size: 150px 150px; /* Cada copia mide 150x150 píxeles */
+  background-attachment: local; /* El fondo se mueve con el scroll interno del elemento */
+  background-clip: padding-box; /* El fondo llega hasta el borde interno (no debajo del borde) */
+  background-blend-mode: overlay; /* Mezcla que aclara u oscurece según la zona */
+}
