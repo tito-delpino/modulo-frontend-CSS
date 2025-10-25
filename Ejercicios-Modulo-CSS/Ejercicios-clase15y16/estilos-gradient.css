@@ -1,0 +1,120 @@
+html {
+  background-color: grey;
+}
+
+nav.prueba1 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(red, black);
+  /* Degradado lineal vertical: rojo arriba, negro abajo */
+}
+
+nav.prueba2 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, red, black);
+  /* Degradado lineal horizontal: rojo a la izquierda, negro a la derecha */
+}
+
+nav.prueba3 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, red 50%, black 55%);
+  /* Degradado lineal horizontal con corte abrupto:
+     rojo ocupa 50%, negro empieza en 55%, salto entre colores */
+}
+
+nav.prueba4 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: radial-gradient(red, black);
+  /* Degradado radial circular por defecto:
+     rojo en el centro, negro en los bordes */
+}
+
+nav.prueba5 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: radial-gradient(circle, red, black);
+  /* Degradado radial circular explícito:
+     rojo en el centro, negro en los bordes, círculo perfecto */
+}
+
+nav.prueba6 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: radial-gradient(circle, red 30%, black 60%);
+  /* Degradado radial con stops definidos:
+     rojo hasta 30% del radio, negro a partir de 60% */
+}
+
+nav.prueba7 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-image: radial-gradient(ellipse at top left, yellow, orange, red);
+  /* Degradado radial elíptico:
+     forma de elipse con centro en la esquina superior izquierda,
+     transición de amarillo → naranja → rojo */
+}
+
+nav.prueba8 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: #020024;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 25%,
+    rgba(147, 7, 33, 1) 50%,
+    rgba(108, 103, 62, 1) 77%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* Degradado radial circular:
+     - Rojo/azules/verde hasta cian
+     - El centro del círculo empieza en el medio de la caja
+     - Colores cambian de manera progresiva desde el centro hacia los bordes */
+}
+
+nav.prueba9 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: #020024;
+  background: linear-gradient(
+    301deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 25%,
+    rgba(147, 7, 33, 1) 50%,
+    rgba(108, 103, 62, 1) 77%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* Degradado lineal diagonal:
+     - Ángulo 301 grados (desde esquina inferior derecha hacia esquina superior izquierda)
+     - Colores cambian progresivamente a lo largo de la línea diagonal */
+}
+
+nav.prueba10 {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: #020024;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 25%,
+    rgba(147, 7, 33, 1) 50%,
+    rgba(108, 103, 62, 1) 77%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* Degradado lineal vertical:
+     - 180 grados (de arriba hacia abajo)
+     - Colores progresan verticalmente desde el top (0%) hasta el bottom (100%) */
+}

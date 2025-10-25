@@ -1,0 +1,58 @@
+html {
+  background-color: grey;
+}
+
+nav {
+  border: 5px solid black;
+  width: 70%;
+  height: 300px;
+  margin: 10px;
+}
+
+nav.prueba1 img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;         /* rellena el contenedor, recorta sin deformar */
+  object-position: 30% 40%;  /* mueve el encuadre visible */
+}
+
+nav.prueba2 img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;       /* mantiene proporción, puede dejar huecos */
+  background-color: red;    /* color de fondo para ver los huecos */
+}
+
+
+nav.prueba3 img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: fill;          /* estira o aplasta la imagen */
+}
+
+
+
+/* 🧱 1. Diferencia principal
+                 |object-fit	                          | background-image
+Dónde se usa	   |En una etiqueta HTML (<img>, <video>)	| En CSS, como fondo de un elemento
+Qué representa	 |Contenido real de la página	          | Decoración visual
+Afecta al SEO    |Sí (tiene alt, se indexa)             | No (no se lee ni indexa)
+Esta en el HTML	 |Sí, con <img>	                        | No, se aplica desde el CSS
+
+🎨 2. Propiedades que se usan
+Concepto	               | En object-fit	         |  En background-*
+Cómo se adapta la imagen | object-fit: cover	     |  contain
+Dónde se coloca	         | object-position: center |  top
+Repetición	             |      —	                 |  background-repeat: no-repeat
+Capas múltiples	         |      —	                 |  se pueden apilar varios fondos separados por comas
+
+⚙️ 3. En la práctica
+Si tu imagen forma parte del contenido (ej: una foto de perfil, producto, ilustración con significado) → usa <img> con object-fit.
+
+Si tu imagen es solo estética (ej: un fondo de sección, textura, degradado con imagen) → usa background-image.
+
+“object-fit = contenido con sentido.
+background = decoración pura.” */
