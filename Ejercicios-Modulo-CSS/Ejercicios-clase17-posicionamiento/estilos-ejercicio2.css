@@ -1,0 +1,51 @@
+html {
+  background-color: gray;
+}
+
+a.hidden {
+  visibility:hidden;
+}
+
+a.opacity {
+  opacity: 0;
+}
+
+a.none {
+  display: none;
+}
+
+ul.visibility * {
+  border: 3px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+ul.visibility :nth-of-type(4) {
+  visibility: hidden;
+}
+
+ul.opacity * {
+  border: 3px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+ul.opacity :nth-of-type(5) {
+  opacity: 0;
+}
+
+ul.none * {
+  border: 3px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+ul.none :nth-of-type(2) {
+  display: none;
+}
