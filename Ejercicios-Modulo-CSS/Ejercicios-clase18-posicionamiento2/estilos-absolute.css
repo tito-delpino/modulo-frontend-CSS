@@ -1,0 +1,64 @@
+html {
+  background-color: gray;
+}
+
+section.static {
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+section.prueba-position-absolute-top {
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+section.prueba-position-absolute-top img:first-of-type {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+section.posicionamiento-static {
+  background-color: rgba(192, 1, 1, 0.568);
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+section.ancestro-relative {
+  border: 5px solid black;
+  margin-bottom: 5px;
+  position: relative
+}
+
+section.ancestro-relative img{
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+img.inline-block {
+  display: block;
+}
+
+section.prueba-position-relative2 {
+  border: 5px solid black;
+  background-color: rgba(192, 1, 1, 0.568);
+  margin-bottom: 5px;
+}
+
+section.prueba-position-relative2 img:nth-of-type(2) {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+section.prueba-position-absolute2 {
+  border: 5px solid black;
+  position: relative;
+}
+
+section.prueba-position-absolute2 img:nth-of-type(2) {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}

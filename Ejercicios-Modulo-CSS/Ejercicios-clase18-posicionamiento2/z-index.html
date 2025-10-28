@@ -9,7 +9,7 @@
     <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
 
     <!-- hoja de estilos css -->
-    <link rel="stylesheet" href="estilos-relative.css" />
+    <link rel="stylesheet" href="estilos-z-index.css" />
 
     <link rel="icon" href="icons/favicon.ico" sizes="image/x-icon" />
 
@@ -20,20 +20,20 @@
   <body>
     <header>
       <h1>Clase 18, Pruebas posicionamiento</h1>
+      <a href="index.html">Volver</a>
     </header>
 
     <main>
-      <h2>Ejercicios clase 18</h2>
-      <ul>
-        <li><a href="relative.html">Position relativ</a></li>
-        <li><a href="absolute.html">Position absolute</a></li>
-        <li><a href="fixed.html">Position fixed</a></li>
-        <li><a href="float.html">Position float</a></li>
-        <li><a href="sticky.html">Position sticky</a></li>
-        <li><a href="z-index.html">Position z-index</a></li>
-      </ul>
+      <h2>position z-index</h2>
+      <p>
+        El posicionamiento z-index basicamente indica sobre que capa queremos que este nuestro elemento, usamos numeros como capas, a mayor numero capa mas alta, si un elemnto tiene elemento 5 otro 3 y otro 8, visualmente se vera primero el 8 despues el 5 y despues el 3 en el caso que lleguen a cruzarse
+      </p>
+      <section class="z-index">
+        <p>En este caso la imagen azul tiene un position absolute pero tiene un position z-index 0 y el footer tiene un z-index -1, por lo que el footer queda detras de las imagen, si le colocamos 1 al footer quedara por delante de la imagen </p>
+        <img src="https://placehold.co/100x100/blue/white" alt="img-prueba" />
+      </section>
     </main>
-
+    <br><br><br><br>
     <footer>
       <hr />
       <div>&copy; tito-delpino-dev - <a href="https://github.com/tito-delpino" target="_blank">github </a></div>

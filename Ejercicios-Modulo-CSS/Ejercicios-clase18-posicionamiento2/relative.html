@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Clase 18, Posicionamiento</title>
-    <meta name="description" content="Ejercicio clase 15 y 16" />
+    <meta name="description" content="Ejercicio clase 18" />
     <meta name="author" content="@tito-delpino" />
     <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
 
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-      <h2>Ejercicios clase 18</h2>
+      <h2>position relative</h2>
       <p>
         Al posicionamiento relative es igual que el static, que es el que esta por defecto, pero del cual podemos hacer uso
         de direcciones para indicar hacia donde queremos mover el elemento, se interpreta desde los bordes de la caja
@@ -34,21 +34,38 @@
         afecta al comportamiento de las demas
       </p>
 
-      <p>Estas imagenes se colocan por defecto una al lado de la otra al ser elemento de linea</p>
-      <section>
+      <section class="static">
+        <p>Estas imagenes se colocan por defecto una al lado de la otra al ser elemento de linea</p>
         <img src="https://placehold.co/100" alt="img-prueba" />
         <img src="https://placehold.co/100" alt="img-prueba" />
         <img src="https://placehold.co/100" alt="img-prueba" />
       </section>
-      <p>
-        Si indicamos que la primera imagen se posicione con un top:100px, las demas imagenes no se moveran hacia donde estaba
-        la primera, incluso se superpone la imagen1 sobre el footer ya que este no cambia tampoco su posicion
-      </p>
 
       <section class="prueba-position-relative-top">
+        <p>
+          Si indicamos que la primera imagen se posicione con un top:100px, las demas imagenes no se moveran hacia donde
+          estaba la primera, incluso se superpone la imagen1 sobre el section siguiente ya que este no cambia tampoco su
+          posicion
+        </p>
         <img src="https://placehold.co/100" alt="img-prueba" />
         <img src="https://placehold.co/100" alt="img-prueba" />
         <img src="https://placehold.co/100" alt="img-prueba" />
+      </section>
+
+      <section class="prueba-position-relative-top-2">
+        Este section necesita un padding-top para poder verse las primeras palabras de este texto ya que sino estarian detras
+        del cuadro superior 1, lo voy a pintar rojo oscuro para que se vea
+      </section>
+
+      <section class="prueba-position-relative2">
+        <p>
+          Como vemos aqui el position relative hace la imagen 2, este sobre las demas, y estas no se mueven ya que su espacio
+          no se ocupa por ellas
+        </p>
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img class="inline-block" src="https://placehold.co/300x100" alt="img-prueba" />
       </section>
     </main>
 

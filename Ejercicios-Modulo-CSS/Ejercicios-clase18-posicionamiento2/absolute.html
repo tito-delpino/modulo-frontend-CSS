@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clase 18, Posicionamiento</title>
+    <meta name="description" content="Ejercicio clase 18" />
+    <meta name="author" content="@tito-delpino" />
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- hoja de estilos css -->
+    <link rel="stylesheet" href="estilos-absolute.css" />
+
+    <link rel="icon" href="icons/favicon.ico" sizes="image/x-icon" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 18, Pruebas posicionamiento</h1>
+      <a href="index.html">Volver</a>
+    </header>
+
+    <main>
+      <h2>position absolute</h2>
+      <p>
+        El posicionamiento absoluto establece la posicion exacta del elemento, sale completamente del flujo normal del
+        documento, significa que ya no ocupa espacio ni afecta a los demás elementos, el navegador lo coloca exactamente
+        donde le digas, usando las propiedades top, right, bottom o left, se posiciona respecto al primer contenedor padre
+        que tenga position: relative, absolute o fixed. Si ninguno de sus padres tiene posición establecida, se toma como
+        referencia el html o la ventana completa.
+      </p>
+
+      <section class="static">
+        <p>Estas imagenes se colocan por defecto una al lado de la otra al ser elemento de linea</p>
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+      </section>
+
+      <section class="prueba-position-absolute-top">
+        <p>
+          Si indicamos que la primera imagen se posicione con un top:100px y un right:100px, veremos como la imagen del perro
+          que es la primera de este elemento contenedor section, se encuentra en la parte superior derecha del navegador ya
+          que no tiene ningun ancestro que tenga posicionamiento relative, absolute o fixed.
+        </p>
+        <img src="https://picsum.photos/id/237/100/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+      </section>
+
+      <section class="posicionamiento-static">
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <p>
+          Este section tiene posicionamiento static, el que viene por defecto como vemos la imagen se coloca a la izquierda y
+          arriba del elemento padre, y hace que este texto se adapte a ella.
+        </p>
+      </section>
+
+      <section class="ancestro-relative">
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <p>
+          Este section sera el padre del elemento que queremos mover y tendra un posicionamiento relative para que el punto
+          de partida para el calculo de la posicion del elemento img sea el mismo contenedor, como vemos la img tiene un
+          top:130px y un left:100px, pero queda dentro del elemento, ya que esta asignado el position relative sobre el, por
+          eso la imagen se queda dentro de este contenedor sobre el texto, vamos a rellenar el section para que sea mas
+          grande
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta iure alias odio placeat aperiam enim rem
+          aspernatur accusamus quaerat quo sapiente, id rerum laudantium mollitia, aliquid ad laborum dolor! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Consectetur provident sed nobis voluptatem itaque culpa odit aliquid
+          tenetur modi facere! Veritatis placeat iure sit quo, incidunt earum at eveniet aut. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Praesentium minus eveniet doloribus ex distinctio officiis. Autem sit ratione dolorum
+          repellendus dignissimos adipisci deserunt magnam illo praesentium, ullam veniam distinctio aliquid. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Dicta aspernatur qui distinctio iure ipsum vel vitae fugiat. Quidem
+          magnam molestias recusandae nisi illum velit ullam eaque neque, aut officiis architecto.
+        </p>
+      </section>
+
+      <section class="prueba-position-relative2">
+        <p>
+          Como vemos aqui el position relative hace la imagen 2, este sobre las demas, y estas no se mueven ya que su espacio
+          no se ocupa por ellas
+        </p>
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img class="inline-block" src="https://placehold.co/300x100" alt="img-prueba" />
+      </section>
+
+      <section class="prueba-position-absolute2">
+        <p>
+          Como vemos aqui el position absolute hace la imagen2 que es la de los edificioons con la misma configuracion
+          anterior sobre el contenedor como position relative, hace que se coloque en el sitio indicado con top:150px y
+          left:150px, pero las demas imagenes se comportan como si la imagen2 no existiera por lo que se mueben hacia la
+          izquierda ya que tienen posicion static por defecto
+        </p>
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img src="https://picsum.photos/id/238/100/100" alt="img-prueba" />
+        <img src="https://placehold.co/100" alt="img-prueba" />
+        <img class="inline-block" src="https://placehold.co/300x100" alt="img-prueba" />
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div>&copy; tito-delpino-dev - <a href="https://github.com/tito-delpino" target="_blank">github </a></div>
+    </footer>
+  </body>
+</html>

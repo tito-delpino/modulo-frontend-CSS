@@ -1,0 +1,9 @@
+html {
+  background-color: grey;
+}
+
+img.sticky2 {
+  position: sticky;
+  top: 0;
+  left: 150px;
+}

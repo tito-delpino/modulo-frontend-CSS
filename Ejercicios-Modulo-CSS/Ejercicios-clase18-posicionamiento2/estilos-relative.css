@@ -2,7 +2,38 @@ html {
   background-color: gray;
 }
 
+section.static {
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+section.prueba-position-relative-top {
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
 section.prueba-position-relative-top img:first-of-type {
   position: relative;
-  top:100px;
+  top: 100px;
+}
+
+section.prueba-position-relative-top-2 {
+  padding-top: 100px;
+  background-color: rgba(192, 1, 1, 0.568);
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+img.inline-block {
+  display: block;
+}
+
+section.prueba-position-relative2 {
+  border: 5px solid black;
+}
+
+section.prueba-position-relative2 img:nth-of-type(2) {
+  position: relative;
+  top: 50px;
+  left: 50px;
 }
