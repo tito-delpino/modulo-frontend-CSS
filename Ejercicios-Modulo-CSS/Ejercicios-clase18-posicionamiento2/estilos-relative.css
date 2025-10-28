@@ -1,0 +1,8 @@
+html {
+  background-color: gray;
+}
+
+section.prueba-position-relative-top img:first-of-type {
+  position: relative;
+  top:100px;
+}
