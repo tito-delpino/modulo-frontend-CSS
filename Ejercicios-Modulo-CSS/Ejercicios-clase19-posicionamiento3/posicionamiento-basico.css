@@ -1,0 +1,102 @@
+.pregunta-a, .pregunta-b, .pregunta-c, .pregunta-d {
+  border: 3px solid black;
+  width: 325px;
+  height: 215px;
+  padding: 3px;
+  background-color: rgb(136, 113, 85);
+}
+
+.pregunta-a .caja1,
+.pregunta-a .caja2,
+.pregunta-a .caja3 {
+  display: inline-block;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.pregunta-b .caja1,
+.pregunta-b .caja2,
+.pregunta-b .caja3 {
+  display: inline-block;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.pregunta-b .caja3 {
+  position: relative;
+  top: 105px;
+}
+
+.pregunta-c .caja1,
+.pregunta-c .caja2,
+.pregunta-c .caja3 {
+  display: inline-block;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.pregunta-c .caja1 {
+  position: relative;
+  top: 107px;
+  left: 219px; 
+}
+
+.pregunta-d .caja1,
+.pregunta-d .caja2,
+.pregunta-d .caja3 {
+  display: inline-block;
+  border: 3px solid black;
+  width: 60px;
+  height: 60px;
+}
+
+.pregunta-d {
+  position: relative;
+}
+
+.pregunta-d .caja1 {
+  float: right;
+}
+
+.caja1 {
+  background-color: rgb(55, 55, 207);
+}
+.caja2 {
+  background-color: rgb(10, 87, 10);
+}
+.caja3 {
+  background-color: rgb(155, 7, 7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/* Ejercicio 1 */
+

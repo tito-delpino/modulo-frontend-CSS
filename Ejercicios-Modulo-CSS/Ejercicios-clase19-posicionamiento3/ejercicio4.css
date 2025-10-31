@@ -1,0 +1,27 @@
+.ejercicio4 {
+  border: 3px solid black;
+  display: inline-block;
+  background-color: rgb(136, 113, 85);
+  padding: 20px;
+  font-size: 0;
+}
+
+.caja3 {
+  background-color: rgb(150, 19, 19);
+}
+.caja4 {
+  background-color: rgb(18, 18, 172);
+}
+.caja1 {
+  background-color: green;
+}
+.caja2 {
+  background-color: rgb(167, 167, 12);
+}
+
+.caja1,.caja2,.caja3,.caja4 {
+  display: inline-block;
+  width: 70px;
+  height: 120px;
+  font-size: 30px;
+}

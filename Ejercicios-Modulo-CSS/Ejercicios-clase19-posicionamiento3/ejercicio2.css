@@ -1,0 +1,55 @@
+.ejercicio2 {
+  border: 3px solid black;
+  width: 325px;
+  height: 150px;
+  background-color: rgb(136, 113, 85);
+  font-size: 30px;
+  position: relative;
+}
+
+.caja1 {
+  background-color: rgb(150, 19, 19);
+}
+.caja2 {
+  background-color: rgb(18, 18, 172);
+}
+.caja3 {
+  background-color: green;
+}
+.caja4 {
+  background-color: rgb(167, 167, 12);
+}
+
+.ejercicio2 .caja1 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  /* position: relative; */
+}
+
+.ejercicio2 .caja2 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ejercicio2 .caja3 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ejercicio2 .caja4 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
