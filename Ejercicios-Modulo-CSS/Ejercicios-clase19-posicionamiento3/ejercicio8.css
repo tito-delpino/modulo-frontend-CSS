@@ -1,0 +1,39 @@
+.ejercicio8 {
+  border: 3px solid black;
+  width: 600px;
+  font-size: 0;
+}
+
+.title, .bodytext,
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 10px;
+}
+
+.title, .bodytext,
+.footer, .sidebar {
+  font-size: 16px;
+}
+
+.sidebar, .bodytext {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 400px;
+}
+
+.sidebar {
+  width: 35%;
+}
+
+.bodytext {
+  width:54%;
+  margin-left: 0;
+  height: 300px;
+}

@@ -1,0 +1,13 @@
+.ejercicio6 {
+  display: inline-block;
+  background-color: rgb(136, 113, 85);
+  padding: 20px;
+}
+
+.caja1,.caja2,.caja3,.caja4 {
+  border: 3px solid black;
+  display: inline-block;
+  width: 70px;
+  height: 300px;
+  margin: 5px;
+}

@@ -4,6 +4,7 @@
   height: 215px;
   padding: 3px;
   background-color: rgb(136, 113, 85);
+  position: relative;
 }
 
 .pregunta-a .caja1,
@@ -24,9 +25,10 @@
   height: 100px;
 }
 
-.pregunta-b .caja3 {
-  position: relative;
-  top: 105px;
+.pregunta-b .caja1 {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
 .pregunta-c .caja1,

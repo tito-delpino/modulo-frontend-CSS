@@ -1,9 +1,8 @@
 .ejercicio3 {
   border: 3px solid black;
-  width: 325px;
+  width: 300px;
   height: 150px;
   background-color: rgb(136, 113, 85);
-  font-size: 30px;
   position: relative;
 }
 
@@ -21,7 +20,6 @@
 }
 
 .ejercicio3 .caja1 {
-  display: inline-block;
   width: 150px;
   height: 80px;
   position: absolute;
@@ -30,7 +28,6 @@
 }
 
 .ejercicio3 .caja2 {
-  display: inline-block;
   width: 100px;
   height: 70px;
   position: absolute;
@@ -39,7 +36,6 @@
 }
 
 .ejercicio3 .caja3 {
-  display: inline-block;
   width: 100px;
   height: 80px;
   position: absolute;
@@ -48,7 +44,6 @@
 }
 
 .ejercicio3 .caja4 {
-  display: inline-block;
   width: 150px;
   height: 40px;
   position: absolute;

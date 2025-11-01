@@ -1,0 +1,26 @@
+.ejercicio7 {
+  border: 3px solid black;
+  width: 600px;
+  bottom: 5px;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+  margin: 5px;
+  padding-left: 10px;
+}
+
+.caja1,
+.caja3 {
+  height: 50px;
+  line-height: 50px;
+}
+
+.caja2 {
+  height: 400px;
+  line-height: 50px;
+}

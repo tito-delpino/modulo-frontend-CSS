@@ -1,9 +1,8 @@
 .ejercicio2 {
   border: 3px solid black;
-  width: 325px;
+  width: 300px;
   height: 150px;
   background-color: rgb(136, 113, 85);
-  font-size: 30px;
   position: relative;
 }
 
@@ -21,34 +20,30 @@
 }
 
 .ejercicio2 .caja1 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  /* position: relative; */
+  width: 50px;
+  height: 50px;
+  position: relative;
 }
 
 .ejercicio2 .caja2 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
 .ejercicio2 .caja3 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .ejercicio2 .caja4 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 0;
   right: 0;
