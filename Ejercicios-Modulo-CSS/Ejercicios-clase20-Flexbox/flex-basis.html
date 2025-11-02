@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clase 20, Flexbox</title>
+    <meta name="description" content="Clase 20, Flexbox" />
+    <meta name="author" content="@tito-delpino" />
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- hoja de estilos css -->
+    <link rel="stylesheet" href="flex-basis.css" />
+
+    <link rel="icon" href="icons/favicon.ico" sizes="image/x-icon" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <style>
+      html {
+        background-color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 20, Flexbox</h1>
+      <a href="index.html">Volver</a>
+    </header>
+    <main>
+      <h2>flex-basic, flex-grow, flex-shrink</h2>
+      <p>Podemos indicar el tamaño base que tendra nuestro item antes de agregar propiedades como flex-grow o flex-shrink </p>
+
+      <p>
+        *Como se ve la imagen por defecto seria flex-start, coloque un margin de 1px a cada caja para que se vea la division, las cajas tienen un tamaño flex-basis:50px
+      </p>
+      <section class="flex-basis">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+      </section>
+
+      <p>*Con la propiedad flex-grow:1 podemos hacer crecer proporcionalmente la caja2, aumenta hasta el maximo permitido por el  contenedor</p>
+      <section class="flex-grow">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+      </section>
+
+      <p>*Con la propiedad flex-shrink:1 podemos hacer decrecer proporcionalmente la caja2, disminuye hasta el minimo indicado en flex-basis</p>
+      <section class="flex-shrink">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div>&copy; tito-delpino-dev - <a href="https://github.com/tito-delpino" target="_blank">github </a></div>
+    </footer>
+  </body>
+</html>

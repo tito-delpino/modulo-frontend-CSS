@@ -1,0 +1,49 @@
+.order {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+}
+
+.order-1 {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.order-1 .caja2 {
+  order: -1;
+}
+
+.order-2 {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.order-2 .caja1 {
+  order: 2;
+}
+.order-2 .caja2 {
+  order: 3;
+}
+.order-2 .caja3 {
+  order: 1;
+}

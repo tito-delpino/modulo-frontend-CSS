@@ -1,0 +1,52 @@
+.align-self {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+  align-self: flex-start;
+}
+
+.align-self-center {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.align-self-center .caja2{
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+  align-self: center;
+}
+
+.align-self-end {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.align-self-end .caja2{
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+  align-self: flex-end;
+}
