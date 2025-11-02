@@ -1,0 +1,39 @@
+.display {
+  background-color: rgb(72, 72, 173);
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  margin: 30px;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+}
+
+.flex-direction,
+.flex-direction2,
+.flex-direction3, .flex-direction4  {
+  background-color: rgb(72, 72, 173);
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 30px;
+  margin-top: 0px;
+  display: flex;
+}
+
+.flex-direction2 {
+  flex-direction: column;
+}
+
+.flex-direction3 {
+  flex-direction: column-reverse;
+}
+
+.flex-direction4 {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,21 @@
+.flex-wrap, .flex-wrap2, .flex-wrap3  {
+  background-color: rgb(72, 72, 173);
+  width: 150px;
+  height: 100px;
+  margin: 30px;
+  margin-top: 0px;
+  display: flex;
+}
+.flex-wrap > *, .flex-wrap2 > *, .flex-wrap3 > * {
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+}
+
+.flex-wrap2 {
+  flex-wrap: wrap;
+}
+
+.flex-wrap3 {
+  flex-wrap: wrap-reverse;
+}
