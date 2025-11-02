@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clase 20, Flexbox</title>
+    <meta name="description" content="Clase 20, Flexbox" />
+    <meta name="author" content="@tito-delpino" />
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- hoja de estilos css -->
+    <link rel="stylesheet" href="align-content.css" />
+
+    <link rel="icon" href="icons/favicon.ico" sizes="image/x-icon" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <style>
+      html {
+        background-color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 20, Flexbox</h1>
+      <a href="index.html">Volver</a>
+    </header>
+    <main>
+      <h2>align-content</h2>
+      <p>
+        Si un contenedor con tiene mas de una linea de elementos podemos hacer referencia a ellos y alinearlos a nuestro
+        antojo
+      </p>
+
+      <p>
+        *Como se ve la imagen por defecto seria flex-start, coloque un margin de 1px a cada caja para que se vea la division,
+        un height de 20px a cada item, un align-content:flex-start y un flex-wrap: wrap
+      </p>
+      <section class="align-content">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+        <div class="caja4">caja4</div>
+        <div class="caja5">caja5</div>
+        <div class="caja6">caja6</div>
+        <div class="caja7">caja7</div>
+      </section>
+
+      <p>*Con un parametro flex-end se veria asi</p>
+      <section class="align-content-end">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+        <div class="caja4">caja4</div>
+        <div class="caja5">caja5</div>
+        <div class="caja6">caja6</div>
+        <div class="caja7">caja7</div>
+      </section>
+
+      <p>*Con parametro flex-center se veria asi</p>
+      <section class="align-content-center">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+        <div class="caja4">caja4</div>
+        <div class="caja5">caja5</div>
+        <div class="caja6">caja6</div>
+        <div class="caja7">caja7</div>
+      </section>
+
+      <p>
+        *Con parametro flex-stretch, este parametro se hace efectivo solo si el item tiene asignado un parametro auto para su
+        alto
+      </p>
+      <section class="align-content-stretch">
+        <div class="caja1">caja1caja1caja1</div>
+        <div class="caja2">caja2caja2caja2</div>
+        <div class="caja3">caja3caja3caja3</div>
+        <div class="caja4">caja4caja4caja4</div>
+        <div class="caja5">caja5caja5caja5</div>
+        <div class="caja6">caja6caja6caja6</div>
+        <div class="caja7">caja7caja7caja7</div>
+      </section>
+
+      <p>*Con parametro flex-space-between, el contenido se reparte de forma vertical manteniendo el padding dentro del contenedor</p>
+      <section class="align-content-space-between">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+        <div class="caja4">caja4</div>
+        <div class="caja5">caja5</div>
+        <div class="caja6">caja6</div>
+        <div class="caja7">caja7</div>
+        <div class="caja8">caja8</div>
+        <div class="caja9">caja9</div>
+        <div class="caja10">caja10</div>
+        <div class="caja11">caja11</div>
+      </section>
+
+      <p>*Con parametro flex-space-between, el contenido se reparte de forma vertical y equitativa dentro del contenedor</p>
+      <section class="align-content-space-around">
+        <div class="caja1">caja1</div>
+        <div class="caja2">caja2</div>
+        <div class="caja3">caja3</div>
+        <div class="caja4">caja4</div>
+        <div class="caja5">caja5</div>
+        <div class="caja6">caja6</div>
+        <div class="caja7">caja7</div>
+        <div class="caja8">caja8</div>
+        <div class="caja9">caja9</div>
+        <div class="caja10">caja10</div>
+        <div class="caja11">caja11</div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div>&copy; tito-delpino-dev - <a href="https://github.com/tito-delpino" target="_blank">github </a></div>
+    </footer>
+  </body>
+</html>

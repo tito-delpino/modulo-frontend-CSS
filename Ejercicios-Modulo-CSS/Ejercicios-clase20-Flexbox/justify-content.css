@@ -1,0 +1,67 @@
+.caja1,
+.caja2,
+.caja3 {
+  background-color: azure;
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+}
+
+.justify-content {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.justify-content-end {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+}
+
+.justify-content-center {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}

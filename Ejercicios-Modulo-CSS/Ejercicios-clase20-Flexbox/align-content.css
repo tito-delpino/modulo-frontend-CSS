@@ -1,0 +1,76 @@
+section > div {
+  background-color: azure;
+  margin: 1px;
+  height: 20px;
+}
+
+.align-content {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.align-content-end {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+}
+
+.align-content-center {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.align-content-stretch > div {
+  background-color: azure;
+  margin: 1px;
+}
+
+.align-content-stretch {
+  background-color: rgb(72, 72, 173);
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.align-content-space-between {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  background-color: rgb(72, 72, 173);
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
