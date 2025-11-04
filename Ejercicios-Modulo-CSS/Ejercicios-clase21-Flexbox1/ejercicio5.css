@@ -1,0 +1,20 @@
+.portada {
+  background-color: #333334;
+  color: white;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 3px 15px;
+}
+
+.enlaces {
+  background-color: #cccccc;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.enlaces img {
+  border: 1px dashed black;
+  display: block;
+}
