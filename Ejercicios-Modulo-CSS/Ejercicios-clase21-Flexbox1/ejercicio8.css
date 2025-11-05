@@ -1,0 +1,43 @@
+.portada {
+  background-color: #aee27a;
+  margin-bottom: 10px;
+}
+
+.cabecera {
+  text-align: center;
+}
+.travel-icon {
+  max-width: 40px;
+  color: aliceblue;
+}
+.web-name {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+}
+
+.enlaces {
+  background-color: #75a549;
+  padding: 5px;
+}
+
+.enlaces a{
+color: white;
+border-right: 2px solid white;
+padding-right: 5px;
+}
+
+.img-cabecera {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  object-position:center;
+    aspect-ratio: 16 / 9;
+
+}
