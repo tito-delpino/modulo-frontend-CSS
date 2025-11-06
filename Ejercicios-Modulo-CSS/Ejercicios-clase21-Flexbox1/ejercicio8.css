@@ -44,33 +44,31 @@
   object-position: 30% 40%;
 }
 
-.alojamientos:first-child {
-  border: 3px solid #6d6754;
-  background-color: #b9ad86;
+.alojamientos {
   padding: 10px;
   border-radius: 20px 0;
   margin-bottom: 25px;
+}
+
+.alojamientos:first-child {
+  border: 3px solid #6d6754;
+  background-color: #b9ad86;
 }
 
 .alojamientos:nth-of-type(2) {
   border: 3px solid #596b49;
   background-color: #8fad75;
-  padding: 10px;
-  border-radius: 20px 0;
-  margin-bottom: 25px;
 }
 
 .alojamientos:nth-of-type(3) {
   border: 3px solid #146296;
   background-color: #92a4b1;
-  padding: 10px;
-  border-radius: 20px 0;
-  margin-bottom: 25px;
 }
 
 .titles {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 10px 0;
 }
 
@@ -82,7 +80,8 @@
   border-top: 5px solid #3f3f3f;
   border-bottom: 5px solid #3f3f3f;
   padding: 20px 15px;
-  background-image: url(icons/star.svg), url(icons/star.svg), url(icons/star.svg), url(icons/star.svg), url(icons/star.svg),url(icons/star.svg),url(icons/star.svg),url(icons/star.svg),url(icons/star.svg);
+  background-image: url(icons/star.svg), url(icons/star.svg), url(icons/star.svg), url(icons/star.svg), url(icons/star.svg),
+    url(icons/star.svg), url(icons/star.svg), url(icons/star.svg), url(icons/star.svg);
   background-repeat: no-repeat;
   background-position: 75px 79%, 105px 79%, 135px 79%, 165px 79%, 75px 41%, 105px 41%, 135px 41%, 165px 41%, 195px 41%;
   background-size: 25px, 25px, 25px, 25px, 25px, 25px, 25px, 25px, 25px;
@@ -90,6 +89,7 @@
 
 .opiniones h4 {
   margin: 10px 0;
+  text-transform: uppercase;
 }
 
 .opiniones img {
