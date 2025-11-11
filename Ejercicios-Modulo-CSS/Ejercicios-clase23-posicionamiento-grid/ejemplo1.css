@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 431px;
+  height: 143px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.item {
+  background-color: #663399;
+  color: white;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  align-content: center;
+}
