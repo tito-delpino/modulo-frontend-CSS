@@ -9,9 +9,17 @@
   gap: 4px;
   box-sizing: border-box;
 
-  grid-template-areas: 'head head head head'
+  grid-template-areas: 'header header header header'
   'main main . sidebar'
   'footer footer footer footer';
+}
+
+.grid div {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item {
@@ -19,17 +27,21 @@
 }
 
 .header {
+  grid-area: header;
   background-color: #FF8483;
 }
 
 .main {
+    grid-area: main;
   background-color: #87F2F0;
 }
 
 .sidebar {
+    grid-area: sidebar;
   background-color: #78CC92;
 }
 
 .footer {
+    grid-area: footer;
   background-color: #8C7787;
 }
