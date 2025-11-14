@@ -1,0 +1,33 @@
+.container {
+  background-color: white;
+  width: 900px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tres-picas, .cuatro-picas, .diez-picas {
+  width: 230px;
+  height: 350px;
+  border-radius: 4%;
+}
+
+.tres-picas {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+.cuatro-picas {
+  background-color: white;
+  color: black;
+  border: 3px solid black
+}
+
+.diez-picas {
+  background-color: white;
+  color: black;
+  border: 3px solid black
+}
