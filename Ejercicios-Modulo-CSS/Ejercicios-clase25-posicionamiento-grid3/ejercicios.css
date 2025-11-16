@@ -1,7 +1,10 @@
+/* ----------------------------------------------- */
+/* ejercicio 1 */
+
 .container {
   background-color: whitesmoke;
-  width: 500px;
-  height: 200px;
+  width: 400px;
+  height: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -9,7 +12,324 @@
 }
 
 .container > * {
-  background-color: rgb(94, 92, 92);
-  align-self: center;
-  justify-self: center;
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 2 */
+
+.container2 {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.container2 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 div:first-child {
+  grid-column: 1/4;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 3 */
+
+.container3 {
+  background-color: whitesmoke;
+  width: 404px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 100px 150px 150px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.container3 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 div:first-child {
+  grid-column: 1/4;
+}
+
+.container3 div:nth-of-type(2) {
+  grid-row: 2/4;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio4 */
+
+.container4 {
+  background-color: whitesmoke;
+  width: 404px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 100px 150px 150px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+
+  grid-template-areas:
+    "header header header"
+    "sidebar . ."
+    "sidebar . .";
+}
+
+.container4 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+
+.container4 div:nth-of-type(2) {
+  padding-bottom: 50px;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio5 */
+
+.container5 {
+  background-color: whitesmoke;
+  width: 456px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px) 150px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+
+  grid-template-areas:
+    "header header header sidebar"
+    ". . . sidebar";
+}
+
+.container5 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+
+.container5 div:nth-of-type(2) {
+  padding-bottom: 70px;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 6 */
+
+.container6 {
+  background-color: whitesmoke;
+  width: 450px;
+  height: 170px;
+  display: grid;
+  gap: 2px;
+}
+
+.fila1,
+.fila2,
+.fila3 {
+  display: grid;
+  gap: 2px;
+}
+
+.fila1 {
+  grid-template-columns: 225px 1fr;
+}
+
+.fila2 {
+  grid-template-columns: 150px 1fr;
+}
+
+.fila3 {
+  grid-template-columns: 1fr;
+}
+
+.fila1 > div,
+.fila2 > div,
+.fila3 > div {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 7 */
+
+.container7 {
+  background-color: whitesmoke;
+  width: 452px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 150px 300px;
+  grid-template-rows: 25% 1fr 25%;
+  gap: 2px;
+
+  grid-template-areas:
+    ". header"
+    "sidebar main"
+    "footer footer";
+}
+
+.container7 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header7 {
+  grid-area: header;
+  background-color: #9c5e11;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding-bottom: 20px;
+}
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #4f5151;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 8 */
+
+.container8 {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.container8 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.container8 > div:nth-of-type(1) {
+  order: 1;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 9 */
+
+.container9 {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  grid-auto-flow: column;
+}
+
+.container9 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: grid;
+  align-items: center;
+  padding-left: 15px;
+}
+
+/* ----------------------------------------------- */
+/* ejercicio 10 */
+
+.container10 {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 254px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px 100px;
+  gap: 2px;
+  
+  grid-template-areas:
+  ". ."
+  ". main"
+  ". main";
+}
+
+.container10 > * {
+  background-color: #5f717d;
+  color: whitesmoke;
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+.celda4 {
+  grid-area: main;
+}
+
+.celda4 {
+  background-color: #5f717d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px;
+  padding: 10px;
+
+  grid-template-areas:
+    "anidado anidado"
+    ". ."
+    ". .";
+}
+
+.celda4 > * {
+  background-color: #8e8ea0;
+  color: #0C100D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anidado {
+  grid-area: anidado;
 }
