@@ -14,7 +14,7 @@
   color: black;
   border: 3px solid black;
   width: 230px;
-  height: 350px;
+  height: 330px;
   border-radius: 4%;
 }
 
@@ -113,7 +113,7 @@
 .cuatro-bottom > img:first-of-type {
   grid-column: 2/3;
   grid-row: 2/3;
-  align-self:start;
+  align-self: start;
   transform: rotate(180deg);
 }
 .cuatro-bottom > img:last-of-type {
@@ -124,10 +124,106 @@
   transform: rotate(180deg);
 }
 
-/* div div:first-child {
-  background-color: rgb(107, 107, 107);
-} */
+.diez-picas {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
-/* div div:nth-child(2) {
-  background-color: rgb(202, 102, 102);
-} */
+.diez-up,
+.diez-bottom {
+  display: grid;
+  grid-template-columns: 40px repeat(3, 1fr) 40px;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+
+.diezpicas {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  justify-self: center;
+}
+
+.diezpicas > img {
+  align-self: center;
+}
+
+.diez-up > img:nth-of-type(1) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.diez-up img:nth-of-type(2) {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.diez-up img:nth-of-type(3) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.diez-up img:nth-of-type(4) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.diez-up img:nth-of-type(5) {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 53px;
+}
+
+.diezpicasbottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  justify-self: center;
+}
+
+.diezpicasbottom > img {
+  align-self: center;
+}
+
+.diez-bottom > img:nth-of-type(1) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.diez-bottom img:nth-of-type(2) {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.diez-bottom img:nth-of-type(3) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.diez-bottom img:nth-of-type(4) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.diez-bottom img:nth-of-type(5) {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 53px;
+}
+
+.diez-bottom {
+  transform: rotate(180deg);
+}
