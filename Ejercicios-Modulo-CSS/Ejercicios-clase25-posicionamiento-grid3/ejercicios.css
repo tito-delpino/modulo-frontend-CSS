@@ -1,0 +1,15 @@
+.container {
+  background-color: whitesmoke;
+  width: 500px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.container > * {
+  background-color: rgb(94, 92, 92);
+  align-self: center;
+  justify-self: center;
+}
