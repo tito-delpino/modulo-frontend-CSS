@@ -7,6 +7,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .portada {
   display: grid;
   height: auto;
@@ -77,12 +81,18 @@
   margin-bottom: 0;
 }
 
-.opciones > div {
+.opciones div a{
   display: flex;
   background-color: #ffc800;
+  color: black;
+  text-decoration: none;
   padding: 3px 30px;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+}
+
+.opciones div a:hover{ 
+  background-color: black;
+  color: #ffc800;
 }
 
 .menu {
@@ -195,14 +205,13 @@
 
 .imgcontainer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  font-size: 12px;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
   margin: 25px;
   gap: 20px;
 }
 
 .imgcontainer img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
