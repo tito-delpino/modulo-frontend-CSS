@@ -1,0 +1,157 @@
+/* ------------------------------------------------------- */
+/* Ejemplo 1 */
+.tabla1 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+}
+
+.tabla1 th,
+.tabla1 td {
+  padding: 10px 35px;
+  font-weight: normal;
+}
+
+.tabla1 th {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.tabla1 td:first-child {
+  text-transform: capitalize;
+}
+
+.tabla1 td:not(:first-child) {
+  text-align: center;
+}
+
+.tabla1 tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.tabla1 tbody tr:nth-child(odd) {
+  background-color: #c2c0c0;
+}
+
+/* ------------------------------------------------------- */
+/* Ejemplo 2 */
+
+.tabla2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #04684c;
+  border-collapse: collapse;
+}
+.tabla2 th,
+.tabla2 td {
+  padding: 5px 40px;
+}
+
+.tabla2 thead {
+  background-color: #04684c;
+  color: white;
+}
+
+.tabla2 thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.tabla2 thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.tabla2 tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: grey;
+}
+.tabla2 tbody tr:nth-child(even) {
+  background-color: #c2c0c0;
+  color: #216956;
+}
+
+/* ------------------------------------------------------- */
+/* Ejemplo 3 */
+
+.tabla3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.tabla3 caption {
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.tabla3 th {
+  color: white;
+}
+
+.tabla3 tr > * {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.tabla3 thead {
+  background-color: rgb(53, 52, 52);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.tabla3 tbody th {
+  background-color: #3f65c5;
+  text-align: left;
+}
+
+.tabla3 tbody tr:nth-child(2) th {
+  background-color: #32509c;
+}
+.tabla3 tbody tr:nth-of-type(2) {
+  background-color: #c2c0c0;
+}
+
+.tabla3 tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.tabla3 tbody tr:nth-child(3) td:nth-of-type(2) {
+  background-color: #f9d949;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------- */
+/* Ejemplo 4 */
+
+.tabla4 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(202, 199, 199);
+  border-collapse: collapse;
+}
+
+.tabla4 caption {
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgb(202, 199, 199);
+}
+
+.tabla4 thead th {
+  background-color: white;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.tabla4 tbody td {
+  padding: 10px 40px;
+}
+
+.tabla4 tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.tabla4 tbody tr:nth-child(odd) {
+  background-color: rgb(235, 232, 232);}
