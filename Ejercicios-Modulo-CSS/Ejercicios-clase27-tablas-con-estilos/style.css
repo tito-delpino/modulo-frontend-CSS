@@ -187,7 +187,7 @@ div.table4 {
 .tabla5 {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(202, 200, 200);
   border-collapse: collapse;
 }
 
@@ -210,19 +210,67 @@ div.table5 {
   vertical-align: top;
 }
 
-.tabla5 tbody tr *:first-child, .tabla5 tbody tr td:nth-last-child(-n+2){
+.tabla5 tbody tr *:first-child,
+.tabla5 tbody tr td:nth-last-child(-n + 2) {
   color: grey;
 }
 
-.tabla5 thead th{
+.tabla5 thead th {
   text-align: left;
   padding: 15px 20px;
+  color: white;
 }
 
-.tabla5 td, .tabla5 th {
+.tabla5 td,
+.tabla5 th {
   border-bottom: 2px solid #19191d;
 }
 
 .tabla5 tbody tr td span:last-child {
   font-size: 12px;
+}
+
+/* ------------------------------------------------------- */
+/* Ejemplo 6 */
+
+.tabla6 {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+.tabla6 caption {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.tabla6 thead th,
+.tabla6 tbody td {
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: 2px solid #f4f6fb;
+}
+
+.tabla6 thead th {
+  background-color: #5f13ef;
+  color: white;
+  font-weight: normal;
+}
+
+.tabla6 tbody td:first-child {
+  font-weight: bold;
+}
+
+.tabla6 tbody td:nth-child(even) {
+  background-color: #ffffff;
+}
+.tabla6 tbody td:nth-child(odd) {
+  background-color: #f4f6fb;
+}
+
+.tabla6 .btn {
+  text-decoration: none;
+  color: white;
+  background-color: #5f13ef;
+  padding: 5px;
 }
