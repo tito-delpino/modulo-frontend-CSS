@@ -1,276 +1,104 @@
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 /* Ejemplo 1 */
-.tabla1 {
-  font-size: 20px;
+
+ul.listado {
+  width: 400px;
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-collapse: collapse;
 }
 
-.tabla1 th,
-.tabla1 td {
-  padding: 10px 35px;
-  font-weight: normal;
+ul.listado li {
+  padding: 10px;
 }
 
-.tabla1 th {
-  color: white;
-  background-color: black;
-  text-transform: uppercase;
-  font-weight: normal;
+ul.listado li + li {
+  border-top: 2px solid rgb(92, 91, 91);
 }
 
-.tabla1 td:first-child {
-  text-transform: capitalize;
+ul.listado li a {
+  text-decoration: none;
+  color: black;
 }
 
-.tabla1 td:not(:first-child) {
-  text-align: center;
-}
-
-.tabla1 tbody tr:nth-child(even) {
-  background-color: #ffffff;
-}
-.tabla1 tbody tr:nth-child(odd) {
-  background-color: #c2c0c0;
-}
-
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 /* Ejemplo 2 */
 
-.tabla2 {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 3px solid #04684c;
-  border-collapse: collapse;
-}
-.tabla2 th,
-.tabla2 td {
-  padding: 5px 40px;
+ul.listado2 {
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid rgb(92, 91, 91);
+  list-style: none;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
 }
 
-.tabla2 thead {
-  background-color: #04684c;
+ul.listado2 li + li {
+  border-top: 2px solid rgb(92, 91, 91);
+}
+
+ul.listado2 li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 20px;
+}
+
+ul.listado2 li:hover,
+ul.listado2 a:hover {
+  background-color: #3579f6;
   color: white;
 }
 
-.tabla2 thead th:first-child {
-  border-top-left-radius: 10px;
+ul.listado2 li.active a {
+  background-color: #3579f6;
+  color: white;
 }
-
-.tabla2 thead th:last-child {
-  border-top-right-radius: 10px;
-}
-
-.tabla2 tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-  color: grey;
-}
-.tabla2 tbody tr:nth-child(even) {
-  background-color: #c2c0c0;
-  color: #216956;
-}
-
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 /* Ejemplo 3 */
 
-.tabla3 {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid black;
-  border-collapse: collapse;
+ul.listado3 {
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid rgb(92, 91, 91);
+  list-style: none;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
 }
 
-.tabla3 caption {
-  text-align: left;
-  padding-bottom: 15px;
-  font-size: 25px;
-  font-weight: bold;
+ul.listado3 li {
+  position: relative;
 }
 
-.tabla3 th {
+ul.listado3 li:hover {
+  background-color: #3579f6;
   color: white;
 }
 
-.tabla3 tr > * {
-  padding: 10px 20px;
-  text-align: center;
+ul.listado3 li + li {
+  border-top: 2px solid rgb(92, 91, 91);
 }
 
-.tabla3 thead {
-  background-color: rgb(53, 52, 52);
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.tabla3 tbody th {
-  background-color: #3f65c5;
-  text-align: left;
-}
-
-.tabla3 tbody tr:nth-child(2) th {
-  background-color: #32509c;
-}
-.tabla3 tbody tr:nth-of-type(2) {
-  background-color: #c2c0c0;
-}
-
-.tabla3 tbody tr:nth-child(odd) {
-  background-color: white;
-}
-
-.tabla3 tbody tr:nth-child(3) td:nth-of-type(2) {
-  background-color: #f9d949;
-  font-weight: bold;
-}
-
-/* ------------------------------------------------------- */
-/* Ejemplo 4 */
-
-.tabla4 {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(202, 199, 199);
-  border-collapse: collapse;
-}
-
-.tabla4 caption {
-  padding-bottom: 20px;
-  font-size: 20px;
-  background-color: #c2c0c0;
-}
-
-div.table4 {
-  padding: 10px;
-  background-color: rgb(235, 232, 232);
-}
-
-.tabla4 tbody tr:first-child {
-  text-transform: uppercase;
-}
-
-.tabla4 tbody td {
-  padding: 10px 35px;
-}
-
-.tabla4 tbody tr:nth-child(odd) {
-  background-color: white;
-}
-
-.tabla4 tbody tr:nth-child(even) {
-  background-color: #c2c0c0;
-}
-
-.progress span {
-  background-color: #04684c;
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: white;
-  text-transform: capitalize;
-}
-.onhold span {
-  background-color: #cb444a;
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: white;
-}
-.open span {
-  background-color: #f6c344;
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: black;
-  text-transform: capitalize;
-}
-
-/* ------------------------------------------------------- */
-/* Ejemplo 5 */
-
-.tabla5 {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(202, 200, 200);
-  border-collapse: collapse;
-}
-
-.tabla5 caption {
-  padding-bottom: 20px;
-  font-size: 20px;
-  background-color: #19191d;
-  color: white;
-  text-align: left;
-}
-
-div.table5 {
-  padding: 10px;
-  background-color: #19191d;
-}
-
-.tabla5 tbody tr > * {
-  background-color: #3b3b41;
-  padding: 15px 20px;
-  vertical-align: top;
-}
-
-.tabla5 tbody tr *:first-child,
-.tabla5 tbody tr td:nth-last-child(-n + 2) {
-  color: grey;
-}
-
-.tabla5 thead th {
-  text-align: left;
-  padding: 15px 20px;
-  color: white;
-}
-
-.tabla5 td,
-.tabla5 th {
-  border-bottom: 2px solid #19191d;
-}
-
-.tabla5 tbody tr td span:last-child {
-  font-size: 12px;
-}
-
-/* ------------------------------------------------------- */
-/* Ejemplo 6 */
-
-.tabla6 {
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-}
-
-.tabla6 caption {
-  padding-bottom: 15px;
-  font-size: 20px;
-}
-
-.tabla6 thead th,
-.tabla6 tbody td {
-  padding: 20px 40px;
-  text-align: center;
-  border-bottom: 2px solid #f4f6fb;
-}
-
-.tabla6 thead th {
-  background-color: #5f13ef;
-  color: white;
-  font-weight: normal;
-}
-
-.tabla6 tbody td:first-child {
-  font-weight: bold;
-}
-
-.tabla6 tbody td:nth-child(even) {
-  background-color: #ffffff;
-}
-.tabla6 tbody td:nth-child(odd) {
-  background-color: #f4f6fb;
-}
-
-.tabla6 .btn {
+ul.listado3 li a {
   text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 2px;
+}
+
+ul.listado3 a span {
+  background-color: #3579f6;
+  padding: 3px 10px;
+  border-radius: 30px;
+  font-size: smaller;
+  position: absolute;
+  right: 10px;
   color: white;
-  background-color: #5f13ef;
-  padding: 5px;
+}
+
+ul.listado3 li:hover a span {
+  background-color: white;
+  color: #3579f6;
 }
