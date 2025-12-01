@@ -1,0 +1,11 @@
+h3 {
+  background-color: #6cfafc;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+  padding: 70px 40px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
