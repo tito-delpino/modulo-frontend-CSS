@@ -1,0 +1,217 @@
+.container {
+  background-image: url(img/topography.svg), linear-gradient(to right, rgba(217, 77, 112, 1) 0%, rgba(129, 74, 188, 1) 100%);
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.portada {
+  display: grid;
+  height: auto;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 25px;
+  margin-bottom: 0px;
+  gap: 15px;
+}
+
+.joint {
+  height: 300px;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background-image: url(img/taco.jpg);
+  background-size: 100%;
+  background-position: 70% 75%;
+}
+
+.preciotacos,
+.preciokombucha {
+  background-color: #ffc800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preciotacos > div:first-child,
+.preciokombucha > div:first-child {
+  font-size: 50px;
+}
+
+.preciotacos > div:last-child,
+.preciokombucha > div:last-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.joint > div {
+  background-color: #ffc800;
+  display: flex;
+  width: fit-content;
+  margin-left: 30px;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.joint > div:first-child {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.joint > div:last-child {
+  font-size: 15px;
+}
+
+.opciones {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 25px;
+  margin-bottom: 0;
+}
+
+.opciones div a{
+  display: flex;
+  background-color: #ffc800;
+  color: black;
+  text-decoration: none;
+  padding: 3px 30px;
+  justify-content:center;
+}
+
+.opciones div a:hover{ 
+  background-color: black;
+  color: #ffc800;
+}
+
+.menu {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 25px;
+  margin-bottom: 0;
+  gap: 13px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.menu > * {
+  background-color: beige;
+  padding: 5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu > div > div:first-of-type {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.menu p {
+  margin-top: 0;
+  color: grey;
+  font-weight: bold;
+}
+
+.featured {
+  background-color: beige;
+  padding: 30px;
+  font-size: 12px;
+  margin: 25px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: 1fr;
+}
+
+.featured img {
+  width: 100%;
+  grid-column: 1/2;
+  margin: 0;
+  padding: 0;
+}
+
+.textos {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.textos > * {
+  padding: 8px;
+}
+
+.textos div:first-child {
+  font-size: 15px;
+}
+
+.textos a {
+  background-color: #ffc800;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  margin-left: 8px;
+  padding: 8px 15px;
+  width: fit-content;
+}
+
+.grams {
+  margin: 25px;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(53, 52, 52);
+}
+
+.grams div:nth-of-type(2) {
+  padding: 0 10px;
+}
+
+.gradient1 {
+  grid-column: 1/2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 200, 0, 1) 100%);
+  margin: 5px 0;
+}
+
+.gradient2 {
+  grid-column: 3/4;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(255, 200, 0, 1) 100%);
+  margin: 5px 0;
+}
+
+.imgcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  margin: 25px;
+  gap: 20px;
+}
+
+.imgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
