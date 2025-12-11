@@ -1,0 +1,28 @@
+main h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  color: red;
+  font-size: 35px;
+}
+main ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+main a {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 221, 0.8666666667);
+}
+main a:hover {
+  font-size: 30px;
+}
+main p {
+  color: rgba(0, 0, 221, 0.8666666667);
+  font-size: 24px;
+}
+
+html {
+  background-color: grey;
+}/*# sourceMappingURL=estilos.css.map */

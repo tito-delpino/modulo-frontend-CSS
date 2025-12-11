@@ -1,0 +1,39 @@
+//Variables
+
+$primary-color: red;
+$secondary-color: #00dd;
+$text-header-size: 35px;
+$text-main-size: 24px;
+
+main {
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    color: $primary-color;
+    font-size: $text-header-size;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    color: $secondary-color;
+    &:hover {
+      font-size: 30px;
+    }
+  }
+  p {
+    color: $secondary-color;
+    font-size: $text-main-size;
+  }
+}
+
+html {
+  background-color: grey;
+}
+
