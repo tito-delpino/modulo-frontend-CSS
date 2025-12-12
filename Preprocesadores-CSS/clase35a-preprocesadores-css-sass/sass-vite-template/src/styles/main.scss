@@ -1,5 +1,4 @@
-$primary-color: blue;
-$secondary-color: red;
+@use "./_variables" as *;
 
 h1 {
   color: $primary-color;
