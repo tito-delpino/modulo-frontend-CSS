@@ -1,0 +1,29 @@
+@use "abstracts/abstracts" as a;
+@use "vendors/vendors";
+@use "base/base";
+@use "components/components";
+@use "layout/layout";
+
+body {
+  background-color: gray;
+}
+
+h1 {
+  color: red;
+
+  @include a.breakpoint(tablet) {
+    color: green;
+  }
+  @include a.breakpoint(tablethori) {
+    color: goldenrod;
+  }
+  @include a.breakpoint(desktop) {
+    color: blue;
+    text-align: center;
+  }
+  @include a.breakpoint(desktopxl) {
+    color: blueviolet;
+    text-align: right;
+    background-color: black;
+  }
+}
