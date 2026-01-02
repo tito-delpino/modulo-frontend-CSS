@@ -6,11 +6,54 @@
 
 body {
   background-color: gray;
+
+  @include a.breakpoint(tablet) {
+    div.header {
+      height: 60px;
+    }
+    div.main {
+      height: 600px;
+    }
+    div.footer {
+      height: 700px;
+    }
+  }
+
+  @include a.breakpoint(tablethori) {
+    display: grid;
+    grid-template-areas:
+      "h h"
+      "header main"
+      "header footer";
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto 1fr 1fr;
+    div.header {
+      height: 100%;
+    }
+    div.main {
+      height: 50%;
+    }
+    div.footer {
+      height: 50%;
+    }
+  }
+
+  /*
+  @include a.breakpoint(tablethori) {
+    background-color: goldenrod;
+    }
+    @include a.breakpoint(desktop) {
+      background-color: blue;
+      }
+      @include a.breakpoint(desktopxl) {
+        background-color: blueviolet;
+        }*/
 }
 
 h1 {
   color: black;
   margin-bottom: 20px;
+  grid-area: h;
 }
 
 div.header {
@@ -19,19 +62,7 @@ div.header {
   display: flex;
   align-items: center;
   padding-left: 20px;
-  /*
-  @include a.breakpoint(tablet) {
-    background-color: green;
-  }
-  @include a.breakpoint(tablethori) {
-    background-color: goldenrod;
-  }
-  @include a.breakpoint(desktop) {
-    background-color: blue;
-  }
-  @include a.breakpoint(desktopxl) {
-    background-color: blueviolet;
-  }*/
+  grid-area: header;
 }
 
 div.main {
@@ -40,6 +71,7 @@ div.main {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  grid-area: main;
 }
 
 div.footer {
@@ -48,4 +80,5 @@ div.footer {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  grid-area: footer;
 }
