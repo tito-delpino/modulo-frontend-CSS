@@ -5,7 +5,10 @@
 @use "layout/layout";
 
 body {
-  background-color: gray;
+  background-color: white;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
 
   @include a.breakpoint(tablet) {
     div.header {
@@ -21,38 +24,33 @@ body {
 
   @include a.breakpoint(tablethori) {
     display: grid;
+    min-height: 100vh;
+
+    padding: 0 50px;
+
     grid-template-areas:
       "h h"
       "header main"
       "header footer";
-    grid-template-columns: 30% auto;
+
+    grid-template-columns: 30% 1fr;
     grid-template-rows: auto 1fr 1fr;
-    div.header {
-      height: 100%;
-    }
-    div.main {
-      height: 50%;
-    }
+
+    div.header,
+    div.main,
     div.footer {
-      height: 50%;
+      height: auto;
     }
   }
 
-  /*
-  @include a.breakpoint(tablethori) {
-    background-color: goldenrod;
-    }
-    @include a.breakpoint(desktop) {
-      background-color: blue;
-      }
-      @include a.breakpoint(desktopxl) {
-        background-color: blueviolet;
-        }*/
+  @include a.breakpoint(desktop) {
+    padding: 0 100px;
+  }
 }
 
 h1 {
   color: black;
-  margin-bottom: 20px;
+  background-color: grey;
   grid-area: h;
 }
 
