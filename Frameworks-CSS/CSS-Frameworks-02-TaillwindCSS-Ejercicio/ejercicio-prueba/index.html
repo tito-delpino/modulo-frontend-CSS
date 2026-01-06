@@ -33,21 +33,30 @@
       <!-- md:hidden: oculto en pantallas medianas o mayores -->
       <button class="block md:hidden" id="mobile-main-btn">
         <!-- Las tres líneas del icono -->
-        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
-        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
-        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
+        <span class="block w-6 h-[4px] bg-primary mb-1"></span>
+        <span class="block w-6 h-[4px] bg-primary mb-1"></span>
+        <span class="block w-6 h-[4px] bg-primary mb-1"></span>
       </button>
     </header>
     <section
-      class="flex md:flex-row items-center justify-around bg-gradient-to-r from-primary to-secondary text-foreground py-12 px-4"
+      class="flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-primary to-secondary text-foreground py-12 px-4 gap-4"
     >
       <div class="text-center md:text-left">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a mi primera prueba con tailwind</h1>
+
         <p class="text-xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <div class="flex md:flex-row gap-4">
+
+        <div class="flex flex-col items-center md:flex-row md:justify-center gap-4">
           <a class="px-6 py-3 bg-primary text-foreground rounded-md shadow-md hover:bg-secondary" href="#">Comencemos</a>
           <a class="px-6 py-3 bg-secondary text-foreground rounded-md shadow-md hover:bg-primary" href="#">Aprende mas</a>
         </div>
+      </div>
+      <div>
+        <img
+          src="https://placehold.co/600x400/EEE/31343C?font=playfair-display&text=Playfair%20Display"
+          alt="placeholder"
+          class="rounded max-w-xs md:max-w-md"
+        />
       </div>
     </section>
 
