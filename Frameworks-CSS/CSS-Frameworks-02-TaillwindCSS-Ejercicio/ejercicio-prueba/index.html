@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Configuración básica del documento -->
+    <!-- =====================================================
+        CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+    ====================================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Título que aparece en la pestaña del navegador -->
     <title>ejercicio-prueba-tailwind</title>
 
-    <!-- Cargamos el CSS donde está Tailwind -->
-    <!-- Aquí NO hay lógica, solo estilos -->
+    <!-- =====================================================
+        ESTILOS
+        Aquí cargamos el CSS que contiene Tailwind
+        (no hay lógica, solo estilos)
+    ====================================================== -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
-    <!-- ================= HEADER ================= -->
+    <!-- =====================================================
+        HEADER / BARRA DE NAVEGACIÓN
+    ====================================================== -->
     <header class="flex items-center justify-between p-4 bg-gray-200 shadow-sm">
-      <!-- Título de la página -->
+      <!-- Título principal -->
       <h1 class="font-bold">Mi primera prueba con tailwind</h1>
 
-      <!-- Menú de navegación -->
+      <!-- ================= MENÚ DE NAVEGACIÓN ================= -->
       <!-- hidden: oculto en móvil -->
-      <!-- md:flex: visible desde pantallas medianas -->
+      <!-- md:flex: visible a partir de pantallas medianas -->
       <nav class="hidden gap-3 md:flex md:gap-4" id="mobile-nav">
         <a href="#" class="hover:text-red-600">Contenido</a>
         <a href="#" class="hover:text-red-600">Recursos</a>
         <a href="#" class="hover:text-red-600">Contacto</a>
       </nav>
 
-      <!-- Botón hamburguesa -->
+      <!-- ================= BOTÓN HAMBURGUESA ================= -->
       <!-- block: visible en móvil -->
-      <!-- md:hidden: oculto en pantallas medianas o mayores -->
+      <!-- md:hidden: desaparece en desktop -->
       <button class="block md:hidden" id="mobile-main-btn">
-        <!-- Las tres líneas del icono -->
+        <!-- Cada span es una “línea” del icono hamburguesa -->
         <span class="block w-6 h-[4px] bg-primary mb-1"></span>
         <span class="block w-6 h-[4px] bg-primary mb-1"></span>
         <span class="block w-6 h-[4px] bg-primary mb-1"></span>
       </button>
     </header>
+
+    <!-- =====================================================
+        HERO / SECCIÓN PRINCIPAL
+    ====================================================== -->
     <section
       class="flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-primary to-secondary text-foreground py-12 px-4 gap-4"
     >
+      <!-- ================= TEXTO PRINCIPAL ================= -->
       <div class="text-center md:text-left">
+        <!-- Título grande -->
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a mi primera prueba con tailwind</h1>
 
+        <!-- Texto descriptivo -->
         <p class="text-xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
+        <!-- ================= BOTONES / CTA ================= -->
+        <!-- Móvil: columna centrada -->
+        <!-- Desktop: fila centrada -->
         <div class="flex flex-col items-center md:flex-row md:justify-center gap-4">
-          <a class="px-6 py-3 bg-primary text-foreground rounded-md shadow-md hover:bg-secondary" href="#">Comencemos</a>
-          <a class="px-6 py-3 bg-secondary text-foreground rounded-md shadow-md hover:bg-primary" href="#">Aprende mas</a>
+          <a class="px-6 py-3 bg-primary text-foreground rounded-md shadow-md hover:bg-secondary" href="#"> Comencemos </a>
+
+          <a class="px-6 py-3 bg-secondary text-foreground rounded-md shadow-md hover:bg-primary" href="#"> Aprende más </a>
         </div>
       </div>
+
+      <!-- ================= IMAGEN ================= -->
       <div>
         <img
           src="https://placehold.co/600x400/EEE/31343C?font=playfair-display&text=Playfair%20Display"
           alt="placeholder"
-          class="rounded max-w-xs md:max-w-md"
+          class="rounded max-w-xs md:max-w-md m-4"
         />
       </div>
     </section>
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- =====================================================
+        JAVASCRIPT
+        Lógica del menú móvil
+    ====================================================== -->
     <script>
-      // Guardamos en una constante el botón del menú (HTML)
+      // Seleccionamos el botón hamburguesa
       const menuBtn = document.querySelector("#mobile-main-btn");
 
-      // Guardamos el menú de navegación (HTML)
+      // Seleccionamos el menú de navegación
       const nav = document.querySelector("#mobile-nav");
 
-      // Escuchamos el evento click en el botón
+      // Escuchamos el click en el botón
       menuBtn.addEventListener("click", () => {
-        // Alterna la clase "hidden"
-        // Si está → la quita (se muestra)
-        // Si no está → la pone (se oculta)
+        // toggle:
+        // - si "hidden" está → se quita (mostrar menú)
+        // - si no está → se añade (ocultar menú)
         nav.classList.toggle("hidden");
       });
     </script>
