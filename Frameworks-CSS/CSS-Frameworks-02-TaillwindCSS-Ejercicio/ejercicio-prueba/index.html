@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>ejercicio-prueba-tailwind</title>
+
+    <!-- Cargamos el CSS donde está Tailwind -->
+    <!-- Aquí NO hay lógica, solo estilos -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
+
   <body>
+    <!-- ================= HEADER ================= -->
     <header class="flex items-center justify-between p-4 bg-gray-200 shadow-sm">
+      <!-- Título de la página -->
       <h1 class="font-bold">Mi primera prueba con tailwind</h1>
-      <nav class="hidden md:flex md:gap-4" id="mobile-nav">
+
+      <!-- Menú de navegación -->
+      <!-- hidden: oculto en móvil -->
+      <!-- md:flex: visible desde pantallas medianas -->
+      <nav class="hidden gap-3 md:flex md:gap-4" id="mobile-nav">
         <a href="#" class="hover:text-red-600">Contenido</a>
         <a href="#" class="hover:text-red-600">Recursos</a>
         <a href="#" class="hover:text-red-600">Contacto</a>
       </nav>
+
+      <!-- Botón hamburguesa -->
+      <!-- block: visible en móvil -->
+      <!-- md:hidden: oculto en pantallas medianas o mayores -->
       <button class="block md:hidden" id="mobile-main-btn">
-        <span class="block w-6 h-[2px] bg-black mb-1"></span>
-        <span class="block w-6 h-[2px] bg-black mb-1"></span>
-        <span class="block w-6 h-[2px] bg-black mb-1"></span>
+        <!-- Las tres líneas del icono -->
+        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
+        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
+        <span class="block w-6 h-[4px] bg-pink-500 mb-1"></span>
       </button>
     </header>
+    <section
+      class="flex md:flex-row items-center justify-around bg-gradient-to-r from-primary to-secondary text-foreground py-12 px-4"
+    >
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a mi primera prueba con tailwind</h1>
+        <p class="text-xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="flex md:flex-row gap-4">
+          <a class="px-6 py-3 bg-primary text-foreground rounded-md shadow-md hover:bg-secondary" href="#">Comencemos</a>
+          <a class="px-6 py-3 bg-secondary text-foreground rounded-md shadow-md hover:bg-primary" href="#">Aprende mas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JAVASCRIPT ================= -->
     <script>
+      // Guardamos en una constante el botón del menú (HTML)
       const menuBtn = document.querySelector("#mobile-main-btn");
+
+      // Guardamos el menú de navegación (HTML)
       const nav = document.querySelector("#mobile-nav");
 
+      // Escuchamos el evento click en el botón
       menuBtn.addEventListener("click", () => {
+        // Alterna la clase "hidden"
+        // Si está → la quita (se muestra)
+        // Si no está → la pone (se oculta)
         nav.classList.toggle("hidden");
       });
     </script>
