@@ -9,12 +9,25 @@
   </head>
   <body>
     <header class="flex items-center justify-between p-4 bg-gray-200 shadow-sm">
-      <h1>Mi primera prueba con tailwind</h1>
-      <nav class="flex gap-4">
+      <h1 class="font-bold">Mi primera prueba con tailwind</h1>
+      <nav class="hidden md:flex md:gap-4" id="mobile-nav">
         <a href="#" class="hover:text-red-600">Contenido</a>
         <a href="#" class="hover:text-red-600">Recursos</a>
         <a href="#" class="hover:text-red-600">Contacto</a>
       </nav>
+      <button class="block md:hidden" id="mobile-main-btn">
+        <span class="block w-6 h-[2px] bg-black mb-1"></span>
+        <span class="block w-6 h-[2px] bg-black mb-1"></span>
+        <span class="block w-6 h-[2px] bg-black mb-1"></span>
+      </button>
     </header>
+    <script>
+      const menuBtn = document.querySelector("#mobile-main-btn");
+      const nav = document.querySelector("#mobile-nav");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
