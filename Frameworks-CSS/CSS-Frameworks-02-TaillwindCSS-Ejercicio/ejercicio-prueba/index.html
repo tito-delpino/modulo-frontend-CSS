@@ -29,9 +29,13 @@
       <!-- ================= MENÚ DE NAVEGACIÓN ================= -->
       <!-- hidden: oculto en móvil -->
       <!-- md:flex: visible a partir de pantallas medianas -->
-      <nav class="hidden gap-3 md:flex md:gap-4" id="mobile-nav">
+      <nav class="hidden gap-4 ml-auto pr-4 md:flex md:gap-4" id="mobile-nav">
         <a href="#" class="hover:text-red-600">Contenido</a>
-        <a href="#" class="hover:text-red-600">Recursos</a>
+        <a
+          href="#"
+          class="hover:text-red-600 border-l border-r border-gray-600 px-2 md:border-l md:border-r md:border-gray-600 md:px-4"
+          >Recursos</a
+        >
         <a href="#" class="hover:text-red-600">Contacto</a>
       </nav>
 
@@ -81,21 +85,132 @@
     </section>
 
     <!-- =====================================================
-        JAVASCRIPT
-        Lógica del menú móvil
-    ====================================================== -->
+    ABOUT SECTION
+====================================================== -->
+    <section
+      class="flex <!-- layout flexible --> flex-col <!-- mobile: columna --> md:flex-row <!-- desktop: fila --> items-center <!-- centra verticalmente --> justify-around <!-- reparte espacio alrededor --> bg-muted text-foreground py-12 <!-- padding vertical --> px-4 <!-- padding horizontal -->"
+    >
+      <!-- Imagen de la sección About -->
+      <div>
+        <img
+          src="https://g-23v0bzriklv.vusercontent.net/placeholder.svg"
+          alt="About Image"
+          class="rounded <!-- bordes redondeados --> max-w-md <!-- ancho máximo -->"
+        />
+      </div>
+
+      <!-- Texto y contenido -->
+      <div class="max-w-lg">
+        <!-- Título -->
+        <h2 class="text-3xl font-bold my-4">About Us</h2>
+
+        <!-- Descripción -->
+        <p class="mb-6">
+          We are a team of dedicated professionals, ready to do whatever it takes to make your business grow.
+        </p>
+
+        <!-- Tarjetas de estadísticas -->
+        <div
+          class="flex flex-col <!-- mobile: columna --> md:flex-row <!-- desktop: fila --> gap-4 <!-- separación entre tarjetas -->"
+        >
+          <!-- Tarjeta -->
+          <div class="bg-card p-6 rounded shadow-md text-center flex-1 <!-- todas ocupan el mismo ancho -->">
+            <h3 class="text-4xl font-bold">150+</h3>
+            <p>Projects Completed</p>
+          </div>
+
+          <!-- Tarjeta -->
+          <div class="bg-card p-6 rounded shadow-md text-center flex-1">
+            <h3 class="text-4xl font-bold">120</h3>
+            <p>Satisfied Clients</p>
+          </div>
+
+          <!-- Tarjeta -->
+          <div class="bg-card p-6 rounded shadow-md text-center flex-1">
+            <h3 class="text-4xl font-bold">10</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    PROJECTS SECTION
+====================================================== -->
+    <section class="bg-muted text-foreground py-12 px-4 text-center">
+      <!-- Título -->
+      <h2 class="text-3xl font-bold mb-6">Our Projects</h2>
+
+      <!-- Grid de proyectos -->
+      <div class="grid grid-cols-1 <!-- mobile: una columna --> md:grid-cols-3 <!-- desktop: tres columnas --> gap-4">
+        <!-- Proyecto -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px] <!-- efecto hover -->">
+          <h3 class="text-2xl font-bold">Project 1</h3>
+          <p>A brief description of Project 1.</p>
+        </div>
+
+        <!-- Proyecto -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px]">
+          <h3 class="text-2xl font-bold">Project 2</h3>
+          <p>A brief description of Project 2.</p>
+        </div>
+
+        <!-- Proyecto -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px]">
+          <h3 class="text-2xl font-bold">Project 3</h3>
+          <p>A brief description of Project 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    SKILLS SECTION
+====================================================== -->
+    <section class="bg-muted text-foreground py-12 px-4 text-center">
+      <!-- Título -->
+      <h2 class="text-3xl font-bold mb-6">Our Skills</h2>
+
+      <!-- Grid de skills -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Skill -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px]">
+          <h3 class="text-2xl font-bold">Skill 1</h3>
+          <p>Description of Skill 1.</p>
+        </div>
+
+        <!-- Skill -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px]">
+          <h3 class="text-2xl font-bold">Skill 2</h3>
+          <p>Description of Skill 2.</p>
+        </div>
+
+        <!-- Skill -->
+        <div class="bg-card p-6 rounded shadow-md hover:translate-y-[-5px]">
+          <h3 class="text-2xl font-bold">Skill 3</h3>
+          <p>Description of Skill 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    FOOTER
+====================================================== -->
+    <footer class="text-center py-4 bg-background text-foreground">
+      <p class="text-sm">&copy; 2025 delpino-dev. All Rights Reserved.</p>
+    </footer>
+
+    <!-- =====================================================
+    JAVASCRIPT · MENÚ MÓVIL
+====================================================== -->
     <script>
-      // Seleccionamos el botón hamburguesa
+      // Botón hamburguesa
       const menuBtn = document.querySelector("#mobile-main-btn");
 
-      // Seleccionamos el menú de navegación
+      // Menú de navegación
       const nav = document.querySelector("#mobile-nav");
 
-      // Escuchamos el click en el botón
+      // Mostrar / ocultar menú en mobile
       menuBtn.addEventListener("click", () => {
-        // toggle:
-        // - si "hidden" está → se quita (mostrar menú)
-        // - si no está → se añade (ocultar menú)
         nav.classList.toggle("hidden");
       });
     </script>
