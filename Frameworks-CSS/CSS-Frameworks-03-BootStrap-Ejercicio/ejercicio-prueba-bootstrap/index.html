@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icono y título -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Vite App</title>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
+        <div class="container-fluid">
+          <!-- Logo + nombre -->
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="https://picsum.photos/id/237/30/30" alt="logo" />
+            <span class="ms-2">Mi portfolio</span>
+          </a>
+
+          <!-- Botón hamburguesa (visible en móvil) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNavegacion">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú colapsable -->
+          <div class="collapse navbar-collapse" id="barraNavegacion">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Habilidades</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="py-5 hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Texto del hero -->
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold">Bienvenido a mi portfolio</h1>
+
+            <p class="lead">Aquí podrás encontrar todos mis proyectos, aunque esto es una prueba con Bootstrap</p>
+
+            <!-- Botones -->
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-primary">Comencemos</a>
+              <a href="#" class="btn btn-outline-primary"> Descubre todo el contenido </a>
+            </div>
+          </div>
+
+          <!-- Imagen del hero -->
+          <div class="col-md-6">
+            <img class="img-fluid hero-img" src="https://picsum.photos/id/237/500/500" alt="hero" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img src="https://picsum.photos/id/237/500/500" alt="About Image" class="img-fluid rounded shadow" />
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-4">About Us</h2>
+            <p>We are a team of dedicated professionals, ready to do whatever it takes to make your business grow.</p>
+            <div class="row text-center g-3 mt-4">
+              <div class="col-md-4">
+                <div class="card border-0 bg-light shadow p-3">
+                  <h3 class="fw-bold">150+</h3>
+                  <p>Projects Completed</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 bg-light shadow p-3">
+                  <h3 class="fw-bold">120</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 bg-light shadow p-3">
+                  <h3 class="fw-bold">10</h3>
+                  <p>Years of Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Our Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card project-card p-3">
+              <h5 class="fw-bold">Project 1</h5>
+              <p>A brief description of Project 1.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card p-3">
+              <h5 class="fw-bold">Project 2</h5>
+              <p>A brief description of Project 2.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card p-3">
+              <h5 class="fw-bold">Project 3</h5>
+              <p>A brief description of Project 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Our Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card skill-card p-3">
+              <h5 class="fw-bold">Skill 1</h5>
+              <p>Description of Skill 1.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card skill-card p-3">
+              <h5 class="fw-bold">Skill 2</h5>
+              <p>Description of Skill 2.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card skill-card p-3">
+              <h5 class="fw-bold">Skill 3</h5>
+              <p>Description of Skill 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 BrandName. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
