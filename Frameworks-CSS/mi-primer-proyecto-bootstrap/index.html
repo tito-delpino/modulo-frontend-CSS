@@ -2,31 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--
+      viewport → necesario para que Bootstrap sea responsive
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vite-bootstrap-template</title>
   </head>
 
   <body>
+    <!-- ===================== -->
     <!-- NAVBAR -->
+    <!-- ===================== -->
     <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
       <!--
-        navbar            → activa el componente navbar
-        navbar-expand-md  → a partir de md el menú se muestra horizontal
-        bg-primary        → color de fondo
-        data-bs-theme     → tema oscuro (colores automáticos correctos)
+        navbar           → activa el componente navbar
+        navbar-expand-md → colapsa en móvil, horizontal desde md
+        bg-primary       → color de fondo
+        data-bs-theme    → ajusta colores automáticamente (modo oscuro)
       -->
 
       <div class="container">
         <!--
-          container → centra el contenido de la navbar
-          (mejor práctica en proyectos reales)
+          container → centra el contenido y limita el ancho
         -->
 
         <!-- BRAND -->
         <a class="navbar-brand" href="#">
           <!--
             navbar-brand → identidad del sitio (logo o texto)
-            suele ser <a>, no h1, por semántica
+            se usa <a> por semántica
           -->
           Primera prueba con Bootstrap
         </a>
@@ -42,10 +46,10 @@
           aria-label="Toggle navigation"
         >
           <!--
-            navbar-toggler        → botón especial de navbar
-            data-bs-toggle        → indica acción collapse
-            data-bs-target        → apunta al id del menú
-            aria-*                → accesibilidad
+            navbar-toggler  → botón específico de navbar
+            data-bs-toggle  → tipo de acción (collapse)
+            data-bs-target  → elemento que controla
+            aria-*          → accesibilidad
           -->
           <span class="navbar-toggler-icon"></span>
           <!--
@@ -56,14 +60,14 @@
         <!-- MENÚ COLAPSABLE -->
         <div class="collapse navbar-collapse" id="menu">
           <!--
-            collapse          → se oculta / muestra
-            navbar-collapse   → comportamiento específico de navbar
-            id="menu"         → conectado al botón
+            collapse         → se oculta / muestra
+            navbar-collapse  → comportamiento específico de navbar
+            id="menu"        → conectado al botón
           -->
 
           <ul class="navbar-nav ms-auto">
             <!--
-              navbar-nav → lista de navegación de navbar
+              navbar-nav → lista de navegación
               ms-auto    → empuja el menú a la derecha
             -->
 
@@ -76,51 +80,192 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"> Proyectos </a>
+              <a class="nav-link" href="#">Proyectos</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"> Conócenos </a>
+              <a class="nav-link" href="#">Conócenos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- CONTENIDO -->
+    <!-- ===================== -->
+    <!-- TÍTULO SECCIÓN -->
+    <!-- ===================== -->
     <section class="container mt-5">
       <!--
         container → ancho controlado
-        mt-5      → margen superior
+        mt-5      → separación vertical respecto a la navbar
       -->
-
       <h2 class="text-center text-primary">
-        Bootstrap OK
         <!--
-          text-center  → centra texto
-          text-primary → color principal
+          text-center  → centra el texto
+          text-primary → color principal del tema
         -->
+        Bootstrap OK
       </h2>
+    </section>
 
-      <div class="row mt-4">
-        <!-- row → fila del grid -->
+    <!-- ===================== -->
+    <!-- HERO -->
+    <!-- ===================== -->
+    <section class="container mt-5">
+      <!--
+        Hero principal de la página
+      -->
+      <div class="row align-items-center">
+        <!--
+          row → grid principal
+          align-items-center → centra verticalmente el contenido
+        -->
 
-        <div class="col-md-6">
+        <!-- TEXTO + BOTÓN -->
+        <div class="col-12 col-md-6 d-flex flex-column">
           <!--
-            col-md-6 → en móvil ocupa 100%, desde md ocupa 50%
+            col-12         → ancho completo en móvil
+            col-md-6       → mitad desde md
+            d-flex         → activa flexbox
+            flex-column    → disposición vertical
           -->
-          Columna 1
+
+          <h1 class="display-5 fw-bold">
+            <!--
+              display-5 → tipografía grande de hero
+              fw-bold   → texto en negrita
+            -->
+            Aprendiendo Bootstrap paso a paso
+          </h1>
+
+          <p class="lead mt-3">
+            <!--
+              lead → texto destacado
+              mt-3 → separación superior
+            -->
+            Proyecto para dominar Bootstrap, responsive design y maquetacion real de interfaces modernas
+          </p>
+
+          <!-- BOTÓN HERO -->
+          <a href="#" class="btn btn-primary btn-lg mt-4 mt-md-3 align-self-start">
+            <!--
+              btn               → botón Bootstrap
+              btn-primary       → color principal
+              btn-lg            → tamaño grande
+              mt-4 / mt-md-3    → separación responsive
+              align-self-start  → evita que ocupe todo el ancho
+            -->
+            Ver ejercicios
+          </a>
         </div>
 
-        <div class="col-md-6">Columna 2</div>
+        <!-- IMAGEN HERO -->
+        <div class="col-12 col-md-6 mt-4 mt-md-0">
+          <!--
+            mt-4      → separación en móvil
+            mt-md-0   → elimina margen en desktop
+          -->
+          <img src="https://picsum.photos/id/249/800/500" alt="heroimg" class="img-fluid rounded" />
+          <!--
+            img-fluid → imagen responsive
+            rounded   → bordes suavizados
+          -->
+        </div>
       </div>
     </section>
 
+    <!-- ===================== -->
+    <!-- CARDS -->
+    <!-- ===================== -->
+    <section class="container mt-5">
+      <!--
+        Sección de cards
+      -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+        <!--
+          row-cols-* → controla número de columnas por breakpoint
+          g-3        → separación horizontal y vertical
+        -->
+
+        <!-- CARD 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <!--
+              card → componente card
+              h-100 → todas las cards misma altura
+            -->
+            <img
+              src="https://picsum.photos/id/237/600/500"
+              alt="img prueba"
+              class="card-img-top img-fluid object-fit-cover"
+              style="height: 200px"
+            />
+            <!--
+              card-img-top    → imagen superior de la card
+              img-fluid       → responsive
+              object-fit-cover → recorte sin deformar
+              height fija     → consistencia visual
+            -->
+            <div class="card-body d-flex flex-column">
+              <!--
+                card-body      → contenido de la card
+                d-flex column  → layout vertical
+              -->
+              <h3 class="card-title">Ejercicios 1</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-primary mt-auto">
+                <!--
+                  mt-auto → empuja el botón al fondo
+                -->
+                Adelante
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/id/238/600/500"
+              alt="img prueba"
+              class="card-img-top img-fluid object-fit-cover"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Ejercicios 2</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-primary mt-auto">Adelante</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/id/239/600/500"
+              alt="img prueba"
+              class="card-img-top img-fluid object-fit-cover"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Ejercicios 3</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-primary mt-auto">Adelante</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== -->
     <!-- VITE / BOOTSTRAP JS -->
+    <!-- ===================== -->
     <script type="module" src="/src/main.js"></script>
     <!--
       main.js importa Bootstrap JS
-      necesario para el collapse
+      necesario para navbar collapse
     -->
   </body>
 </html>
