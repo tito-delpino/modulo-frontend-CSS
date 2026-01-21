@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Codificación de caracteres -->
     <meta charset="UTF-8" />
+
+    <!-- Icono del proyecto (Vite) -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Viewport necesario para responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título del proyecto -->
     <title>mi-primer-proyecto-bulma</title>
   </head>
+
   <body>
+    <!-- ================= HEADER / NAVBAR ================= -->
     <header>
       <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <!-- Brand + burger -->
         <div class="navbar-brand">
-          <a href="#" class="navbar-item"><strong>Mi primer template de Bulma</strong></a>
+          <!-- Logo / nombre -->
+          <a href="#" class="navbar-item">
+            <strong>Mi primer template de Bulma</strong>
+          </a>
+
+          <!-- Botón burger (solo visible en mobile) -->
+          <!-- data-target debe coincidir con el id del navbar-menu -->
           <a href="#" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbarMain">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -18,17 +34,22 @@
           </a>
         </div>
 
+        <!-- Menú principal -->
         <div class="navbar-menu" id="navbarMain">
+          <!-- Menú centrado (CSS propio) -->
           <div class="navbar-start is-centered navbar-center">
             <a href="#" class="navbar-item">Home</a>
             <a href="#" class="navbar-item">About</a>
             <a href="#" class="navbar-item">Contact</a>
           </div>
 
+          <!-- Botones a la derecha -->
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary"><strong>Sign up</strong></a>
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
                 <a class="button is-light">Log in</a>
               </div>
             </div>
@@ -36,21 +57,30 @@
         </div>
       </nav>
     </header>
+
+    <!-- ================= HERO ================= -->
     <section class="hero is-primary is-medium">
       <div class="hero-body">
         <div class="container">
+          <!-- Layout en dos columnas -->
           <div class="columns is-vcentered">
+            <!-- Texto del hero -->
             <div class="column is-6">
-              <h1 class="title">Template para bulma</h1>
+              <h1 class="title">Template para Bulma</h1>
               <h2 class="subtitle">Base limpia con Vite y Bulma</h2>
+
+              <!-- Botones -->
               <div class="buttons mt-4">
                 <a href="#" class="button is-light">Empecemos</a>
                 <a href="#" class="button is-outlined is-light">Aprendiendo</a>
               </div>
             </div>
+
+            <!-- Imagen del hero -->
             <div class="column is-6">
+              <!-- Helper de Bulma para mantener proporción -->
               <figure class="image is-4by3">
-                <img src="https://picsum.photos/id/237/600/500" alt="heroimg" />
+                <img src="https://picsum.photos/id/237/600/500" alt="Hero image" />
               </figure>
             </div>
           </div>
@@ -58,6 +88,19 @@
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma Template</strong> by titodelpino-dev. Built with
+          <a href="https://bulma.io" target="_blank" rel="noopener noreferrer"> Bulma </a>
+          and Vite.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <!-- main.js importa Bulma y contiene el JS del burger -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
