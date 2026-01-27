@@ -247,11 +247,14 @@ textarea {
 }
 
 /* Aqui empieza el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,400&display=swap');
 
 .page {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 header {
@@ -260,13 +263,22 @@ header {
   align-items: center;
 }
 
+header figure {
+  margin: 0;
+}
+
 .menu {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
+  gap: 56px;
 }
 
 .menu a {
-  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #424241;
+  text-decoration: none;
 }
 
 .hero {
@@ -285,4 +297,16 @@ header {
 
 .hero-img img {
   max-width: 100%;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.categories > article {
+  flex-grow: 1;
+  background-color: white;
+  padding: 0;
 }
