@@ -12,7 +12,6 @@
    ========================================================================== */
 
 html {
-  background-color: grey;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -247,10 +246,17 @@ textarea {
 }
 
 /* Aqui empieza el proyecto */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,400&display=swap");
+
+body {
+  background-image: url("../img/hero@2x.jpg");
+  background-position: top right -40px;
+  background-size: 900px;
+  background-repeat: no-repeat;
+}
 
 .page {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -260,6 +266,7 @@ textarea {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
   align-items: center;
 }
 
@@ -267,46 +274,135 @@ header figure {
   margin: 0;
 }
 
-.menu {
+header figure img {
+  width: 171px;
+}
+
+header figcaption {
+  display: none;
+}
+
+header nav ul {
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 56px;
 }
 
-.menu a {
-  font-family: 'Poppins', sans-serif;
+header nav ul a {
+  font-family: "Poppins", sans-serif;
   color: #424241;
   text-decoration: none;
+  font-weight: normal;
 }
 
 .hero {
+  padding-top: 30px;
+}
+
+.hero__content {
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 110px;
+  line-height: 110px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.hero h1 span {
+  color: #7edad2;
+}
+
+.hero__content p {
+  color: var(--text-and-main-gray-2, #909090);
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+
+.hero__content a {
+  display: inline-block;
+  background-color: #7edad2;
+  color: white;
+  padding: 12px 18px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.hero__numbers {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  max-width: 480px;
+  margin-bottom: 40px;
 }
 
-.hero-text {
-  flex-grow: 2;
+.hero__numbers div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-img {
-  flex-grow: 1;
+.hero__number {
+  font-family: Bebas Neue;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #424241;
 }
 
-.hero-img img {
-  max-width: 100%;
+.hero__numbers div span:last-child {
+  color: var(--text-and-main-gray-2, #909090);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .categories {
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  gap: 30px;
 }
 
-.categories > article {
-  flex-grow: 1;
+.categories article {
   background-color: white;
-  padding: 0;
+  padding: 32px;
+}
+
+.categories article h3 {
+  color: var(--text-and-main-black, #424241);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 8px 0;
+}
+
+.categories article p {
+  color: var(--text-and-main-gray-2, #909090);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 300;
+  margin-bottom: 0;
 }
