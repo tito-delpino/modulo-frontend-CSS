@@ -1,13 +1,16 @@
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
   color: #222;
   font-size: 1em;
@@ -20,6 +23,7 @@ html {
  *
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -33,6 +37,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
@@ -47,6 +52,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
@@ -59,6 +65,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -68,6 +75,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
   resize: vertical;
 }
@@ -75,12 +83,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Hide visually and from screen readers
  */
+
 .hidden,
 [hidden] {
   display: none !important;
@@ -94,6 +105,7 @@ textarea {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
+
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -112,6 +124,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
+
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
   clip: auto;
@@ -126,6 +139,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
+
 .invisible {
   visibility: hidden;
 }
@@ -136,6 +150,7 @@ textarea {
  * The use of `table` rather than `block` is only necessary if using
  * `::before` to contain the top-margins of child elements.
  */
+
 .clearfix::before,
 .clearfix::after {
   content: "";
@@ -151,17 +166,24 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media print {
   *,
   *::before,
@@ -172,16 +194,20 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -190,30 +216,37 @@ textarea {
   a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
+
 /* Aqui empieza el proyecto */
+
 * {
   margin: 0;
   padding: 0;
@@ -229,4 +262,4 @@ body::before {
   bottom: 0;
   right: 0;
   min-height: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
